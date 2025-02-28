@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Document Scanner</h1>
+        <div id="auth">
+            <button onclick="showRegister()">Register</button>
+            <button onclick="showLogin()">Login</button>
+        </div>
+        <div id="content" style="display: none;">
+            <h2>Welcome, <span id="username"></span></h2>
+            <p>Credits: <span id="credits">0</span></p>
+            <input type="file" id="fileInput">
+            <button onclick="uploadFile()">Scan Document</button>
+            <button onclick="requestCredits()">Request More Credits</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
