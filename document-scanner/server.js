@@ -124,7 +124,6 @@ app.get('/admin/analytics', authenticateUser, (req, res) => {
     res.json(analytics);
 });
 
-
 // Start Server
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
